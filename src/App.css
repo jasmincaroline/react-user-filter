@@ -1,0 +1,118 @@
+:root {
+  --bg: #10141f; 
+  --panel: #151b28;
+  --text: #e8eef6;
+  --muted: #9db0c9;
+  --accent: #4da3ff;
+  --accent-2: #71c7ec;
+  --ring: rgba(113, 199, 236, 0.35);
+  --border: #223048;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0d1b2a, #4a6088);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  justify-content: center;
+}
+
+.app {
+  max-width: 880px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.2px;
+}
+
+.search-group {
+  display: flex;
+  gap: 8px;
+  width: auto;
+}
+
+.search {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  outline: none;
+  transition: box-shadow 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+.search.active {
+  border-color: #4da3ff;
+  background-color: #1c2535;
+}
+
+.search:focus {
+  border-color: var(--accent-2);
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+.clear-btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--accent-2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.clear-btn:hover {
+  background: var(--accent-2);
+  color: var(--panel);
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 8px 0 16px;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-2);
+}
