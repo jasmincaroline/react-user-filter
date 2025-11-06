@@ -25,9 +25,3 @@ This project is built using:
 * **Vite:** Used as the development environment for its speed and performance benefits.
 * **CSS:** For layout, styling, and ensuring responsiveness.
 * **Fetch API:** For retrieving the external user data.
-
-    npm run dev
-    # or yarn dev
-    ```
-
-The application will now be running on your local machine, typically accessible at `http://localhost:5173`.
