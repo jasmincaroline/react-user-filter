@@ -1,16 +1,33 @@
-# React + Vite
+# 👤 User Directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple and responsive React application that **fetches and displays user data** from the JSONPlaceholder API. Users can be instantly filtered by **name, email, or company name** using a live search bar.
+![Gravando 2025-11-06 084205](https://github.com/user-attachments/assets/5da36f63-e68a-40ed-8ccd-b46f950de752)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+* ✅ **Dynamic Data Fetching:** Fetches user data dynamically from the external API: `https://jsonplaceholder.typicode.com/users`.
+* 🔍 **Live Search Filter:** Provides instant, **case-insensitive** filtering across multiple fields (Name, Email, Company).
+* 🖥️ **Clean & Responsive Interface:** Ensures a great user experience on all device sizes.
+* 📋 **Detailed Display:** Clearly shows user details such as **name, email, company, city, and website**.
+* 🗑️ **Clear Search Button:** Includes a dedicated control to quickly reset the search field.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Technologies
+
+This project is built using:
+
+* **React:** Leveraging **Hooks** (`useState`, `useEffect`) for efficient state management.
+* **Vite:** Used as the development environment for its speed and performance benefits.
+* **CSS:** For layout, styling, and ensuring responsiveness.
+* **Fetch API:** For retrieving the external user data.
+
+    npm run dev
+    # or yarn dev
+    ```
+
+The application will now be running on your local machine, typically accessible at `http://localhost:5173`.
